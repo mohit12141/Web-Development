@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 377px) {
+  #search-butt{
+  	margin-left: 1rem;
+  }
+/* .Carousel-custome{
+	
+	margin: 2rem;
+
+	}*/
+	.navbar .navbar-brand {
+		font-size: 0.7rem;
+	}
+	.navbar .navbar-nav .nav-item .nav-link .btn{
+		font-size: 10%;
+	}
+}
+
+@media screen and (max-width: 480.98px) {
+  #search-butt{
+  	margin-left: 1rem;
+  }
+/* .Carousel-custome{
+	
+	margin: 2rem;
+
+	}*/
+	/*.navbar-brand{
+		font-size: 20px;
+	}*/
+}
+
+@media screen and (max-width: 767.98px){
+  #navbutt {
+  	font-size: 10px;
+  }
+  #search-butt{
+  	font-size: 10px;
+  }
+  .navbar-brand{
+  	font-size: 15px;
+  }
+  #search-bar{
+  	width: 6rem;
+  }
+  /*.Carousel-custome{
+	
+	margin: 4rem;
+
+	}*/
+	
+}
+
+.card{
+	margin-top: 9px;
+	
+}
+
+.row{
+	background-color: mediumturquoise;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	margin-left: 4%;
+	margin-right: 4%;margin-bottom: 15%;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+div.card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.18);
+}
+
+.Carousel-custome{
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}

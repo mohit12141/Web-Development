@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <!-- JavaScript Bundle with Popper -->
+   <!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="	sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   	
+    <link rel="stylesheet" type="text/css" href="Admin.css">
+   	<link rel="stylesheet" type="text/css" href="Record.css">
+    <link rel="stylesheet" type="text/css" href="foot.css">
+    <title>Students Record</title>
+    
+  </head>
+  <body  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="cursor: default; pointer-events: none;">Student</a>
+      <div class="vr"></div>
+        <ul class="navbar-nav me-auto " style="margin-left: 2rem;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><button type="button" class="btn btn-outline-primary" id="navbutt">Home</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Student.html"><button type="button" class="btn btn-primary" id="navbutt">Student</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Teacher.html"><button type="button" class="btn btn-outline-primary" id="navbutt" >Teacher</button></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control" id="search-bar" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit" id="search-butt" style="margin-left: 1rem">Search</button>
+        </form>
+      
+    </div>
+  </nav>
+  <br><br><br><br>
+  <!-- navlinks -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#ten" type="button" role="tab" aria-controls="home" aria-selected="true">10<sup>TH</sup></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#nine" type="button" role="tab" aria-controls="profile" aria-selected="false">9<sup>TH</sup></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#eight" type="button" role="tab" aria-controls="contact" aria-selected="false">8<sup>TH</sup></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        
+      
+<!-- Table -->
+    <div class="table-out border rounded tab-pane fade show active" id="ten" role="tabpanel" aria-labelledby="home-tab">
+      <table class="table table-success table-striped border rounded">
+        <thead>
+          <tr>
+            <th scope="col">RollNo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>X</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>X</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>X</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>X</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>X</td>
+            <td>2730154830</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- endtable -->
+<div class="table-out border rounded tab-pane fade" id="nine" role="tabpanel" aria-labelledby="profile-tab">
+      <table class="table table-secondary table-striped border rounded">
+        <thead>
+          <tr>
+            <th scope="col">RollNo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>IX</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>IX</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>IX</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>IX</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>IX</td>
+            <td>2730154830</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- endtable -->
+<div class="table-out border rounded tab-pane fade" id="eight" role="tabpanel" aria-labelledby="home-tab">
+      <table class="table table-warning table-striped border rounded">
+        <thead>
+          <tr>
+            <th scope="col">RollNo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>IVIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Manan Jain</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">110</th>
+            <td>Ravina Kumari</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">107</th>
+            <td>Sunil Gavaskar</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">108</th>
+            <td>Pamela Parikh</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">156</th>
+            <td>Thomasena Taylor</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">103</th>
+            <td>Albert Akridge</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">151</th>
+            <td>Rosalind Rothchild</td>
+            <td>VIII</td>
+            <td>7280174578</td>
+          </tr>
+          <tr>
+            <th scope="row">111</th>
+            <td>Susanna Sarro</td>
+            <td>VIII</td>
+            <td>9263810463</td>
+          </tr>
+          <tr>
+            <th scope="row">127</th>
+            <td>Francisco Fill</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+          <tr>
+            <th scope="row">198</th>
+            <td>Horatio Karnewal</td>
+            <td>VIII</td>
+            <td>7280164578</td>
+          </tr>
+          <tr>
+            <th scope="row">175</th>
+            <td>Green English</td>
+            <td>VIII</td>
+            <td>9263458463</td>
+          </tr>
+          <tr>
+            <th scope="row">163</th>
+            <td>Gilbert Strange</td>
+            <td>VIII</td>
+            <td>2730154830</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- endtable -->
+    </div>
+  <br><br><br><br>
+  <!-- footer    -->
+  <footer>
+    
+    <div class="muted-text bg-secondary text-center text-white" style="font-size: 1.2rem;">
+      All Rights Reserved. &copy 2021 PrimaThink Design By : PrimaThink
+    </div>
+    <div class="text-center p-2 bg-secondary" style="background-color: #e3f2fd;">
+      <a href="https://www.facebook.com/PrimaThink/" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/facebook.png"/></a>
+      <a href="https://primathink.in/" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/google-logo.png"/></a>
+      <a href="https://www.instagram.com/primathink/" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/instagram-new.png"/></a>
+      <a href="https://in.linkedin.com/jobs/view/java-web-developer-at-primathink-technologies-pvt-ltd-2670866289" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/linkedin.png"/></a>
+    </div>
+  </footer>
+  </body>
+</html>

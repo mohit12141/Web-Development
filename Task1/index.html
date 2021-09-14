@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <!-- JavaScript Bundle with Popper -->
+   <!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="	sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" type="text/css" href="Admin.css">
+        <link rel="stylesheet" type="text/css" href="foot.css">
+    <title>Admin Panel</title>
+    
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;" >
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#" style="cursor: default; pointer-events: none;">Admin Panel</a>
+	    
+	    <div class="vr"></div>
+	      <ul class="navbar-nav me-auto " style="margin-left: 2rem;">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html"><button type="button" class="btn btn-primary" id="navbutt">Home</button></a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="Student.html"><button type="button" class="btn btn-outline-primary" id="navbutt">Student</button></a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="Teacher.html"><button type="button" class="btn btn-outline-primary" id="navbutt" >Teacher</button></a>
+	        </li>
+	      </ul>
+	      <form class="d-flex">
+	        <input class="form-control" id="search-bar" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-primary" type="submit" id="search-butt" style="margin-left: 1rem">Search</button>
+	      </form>
+	    
+	  </div>
+	</nav>
+	<br><br><br><br>
+   <!-- NavEnd -->
+   <!--  Cards -->
+   	<div class="row justify-content-evenly">
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header bg-primary text-white">DASHBOARD</h6>
+		    <br>
+		    <p class="card-text">Look for any kind of problem queried or pending work.</p>
+		    <a href="#work" class="btn btn-primary">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="anounc.png" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+
+		    <h6 class="card-header bg-success text-white">ANNOUNCEMENT</h6>
+		    <br>
+		    <p class="card-text">Direct Message to everyone in school premises or filter them.</p>
+		    <a href="Anounce.html" class="btn btn-success">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header bg-secondary text-white">INQUIRY</h6>
+		    <br>
+		    <p class="card-text">Collect information for different aspects related to school.</p>
+		    <a href="Inquiry.html" class="btn btn-secondary">Direct me</a>
+		  </div>
+		</div>
+	</div>	
+	<!-- endcards -->
+   <!--Carousel--> 
+   <!-- <div class="Carousel-custome border border-secondary rounded-top">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="school.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="school.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="school.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</div> -->
+		<!-- endcarousel -->
+   <!--  Cards -->
+   <br><br><br><br><br><br><br><br>
+   <h3 class="text-muted" style="margin-left: 4%;" id="work">GOOGLE WORKSPACE</h3>
+   	<div class="row justify-content-evenly">
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header"><img src="https://img.icons8.com/color/24/000000/gmail-new.png"/> GMAIL</h6>
+		    <br>
+		    <p class="card-text">Manage your mails and meeting.</p>
+		    <a href="https://mail.google.com/" class="btn btn-primary">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="anounc.png" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+
+		    <h6 class="card-header"><img src="https://img.icons8.com/color/24/000000/google-drive--v2.png"/> GDRIVE</h6>
+		    <br>
+		    <p class="card-text">Store and share your documents.</p>
+		    <a href="https://drive.google.com/" class="btn btn-success">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header "><img src="https://img.icons8.com/color/24/000000/google-calendar--v2.png"/> CALENDAR</h6>
+		    <br>
+		    <p class="card-text">Schedule meeting and other task.</p>
+		    <a href="https://calendar.google.com/" class="btn btn-secondary">Direct me</a>
+		  </div>
+		</div>
+	</div>	<br><br>
+	<!-- endcards -->
+	<h3 class="text-muted" style="margin-left: 4%;">GOOGLE UTILITIES</h3>
+   	<div class="row justify-content-evenly">
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header"> <img src="https://img.icons8.com/color/24/000000/google-docs--v1.png"/> DOCS</h6>
+		    <br>
+		    <p class="card-text">Easily format text and paragraph with smart editing.</p>
+		    <a href="https://docs.google.com/" class="btn btn-primary">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="anounc.png" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+
+		    <h6 class="card-header"> <img src="https://img.icons8.com/color/24/000000/google-slides.png"/> SLIDES</h6>
+		    <br>
+		    <p class="card-text">Presentation tool with variety of fonts,themes and more.</p>
+		    <a href="https://slides.google.com/" class="btn btn-warning">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header "><img src="https://img.icons8.com/fluency/24/000000/google-sheets.png"/> SHEETS</h6>
+		    <br>
+		    <p class="card-text">Simplify common spreadsheet task and more.</p>
+		    <a href="https://sheets.google.com/" class="btn btn-success">Direct me</a>
+		  </div>
+		</div>
+		<div class="card pb-2 col-4" style="width: 14rem;" id="custome-card">
+			
+		  <!-- <img src="spedo.jpg" class="card-img-top" alt="..."> -->
+		  <div class="card-body">
+		    <h6 class="card-header "><img src="https://img.icons8.com/color/24/000000/google-forms-new-logo-1.png"/> FORMS</h6>
+		    <br>
+		    <p class="card-text">Manage event registrations, collect email addresses for a newsletter.</p>
+		    <a href="https://forms.google.com/" class="btn btn-secondary">Direct me</a>
+		  </div>
+		</div>
+	</div>
+  <br><br><br><br>
+  <!-- footer    -->
+  <footer>
+    
+    <div class="muted-text bg-secondary text-center text-white" style="font-size: 1.2rem;">
+      All Rights Reserved. &copy 2021 PrimaThink Design By : PrimaThink
+    </div>
+    <div class="text-center p-2 bg-secondary" style="background-color: #e3f2fd;">
+      <a href="https://www.facebook.com/PrimaThink/" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/facebook.png"/></a>
+      <a href="https://primathink.in/" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/google-logo.png"/></a>
+      <a href="https://www.instagram.com/primathink/" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/instagram-new.png"/></a>
+      <a href="https://in.linkedin.com/jobs/view/java-web-developer-at-primathink-technologies-pvt-ltd-2670866289" class="p-2"><img src="https://img.icons8.com/fluency/34/000000/linkedin.png"/></a>
+    </div>
+  </footer>	
+  </body>
+</html>
